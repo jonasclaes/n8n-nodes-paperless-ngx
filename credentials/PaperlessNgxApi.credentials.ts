@@ -13,7 +13,7 @@ export class PaperlessNgxApi implements ICredentialType {
 	documentationUrl = 'https://docs.paperless-ngx.com/api/';
 	icon: Icon = {
 		light: 'file:paperlessNgx.svg',
-		dark: 'file:paperlessNgx.svg'
+		dark: 'file:paperlessNgx.svg',
 	};
 	properties: INodeProperties[] = [
 		{
@@ -21,7 +21,7 @@ export class PaperlessNgxApi implements ICredentialType {
 			name: 'domain',
 			type: 'string',
 			default: '',
-			required: true
+			required: true,
 		},
 		{
 			displayName: 'Token',
@@ -29,9 +29,9 @@ export class PaperlessNgxApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			typeOptions: {
-				password: true
+				password: true,
 			},
-			required: true
+			required: true,
 		},
 	];
 
@@ -39,7 +39,7 @@ export class PaperlessNgxApi implements ICredentialType {
 		type: 'generic',
 		properties: {
 			headers: {
-				Authorization: '=Token {{$credentials.token}}'
+				Authorization: '=Token {{$credentials.token}}',
 			},
 		},
 	};

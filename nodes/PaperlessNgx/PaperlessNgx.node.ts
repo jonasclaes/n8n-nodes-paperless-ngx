@@ -192,7 +192,6 @@ export class PaperlessNgx implements INodeType {
 					}
 
 					if (operation === Operation.Create) {
-
 						const documentFieldName = this.getNodeParameter('file', itemIndex, 'data') as string;
 						const documentData = this.helpers.assertBinaryData(itemIndex, documentFieldName);
 						const documentBinaryData = items[itemIndex].binary![documentFieldName];
