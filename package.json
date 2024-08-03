@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-paperless-ngx",
   "version": "0.1.0",
-  "description": "",
+  "description": "Custom n8n node for Paperless ngx",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Jonas Claes",
+    "email": "jonas@jonasclaes.be"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/jonasclaes/n8n-nodes-paperless-ngx.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -36,15 +36,14 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/PaperlessNgxApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/PaperlessNgx/PaperlessNgx.node.js"
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.19.43",
     "@typescript-eslint/parser": "^7.15.0",
     "eslint": "^8.56.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
